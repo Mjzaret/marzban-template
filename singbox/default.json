@@ -10,7 +10,7 @@
         "address": "https://1.1.1.1/dns-query",
         "address_resolver": "dns_direct",
         "strategy": "prefer_ipv4",
-        "detour": "proxy"
+        "detour": "Proxy"
       },
       {
         "tag": "dns_direct",
@@ -53,11 +53,6 @@
     ],
     "independent_cache": true
   },
-  "ntp": {
-    "enabled": true,
-    "server": "pool.ntp.org",
-    "detour": "direct"
-  },
   "inbounds": [
     {
       "type": "tun",
@@ -75,15 +70,15 @@
   "outbounds": [
     {
       "type": "selector",
-      "tag": "proxy",
+      "tag": "Proxy",
       "outbounds": null
     },
     {
       "type": "urltest",
-      "tag": "⚡️ Fastest",
+      "tag": "⚡️ Auto",
       "outbounds": null,
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "10m0s"
+      "interval": "5m0s"
     },
     {
       "type": "direct",
@@ -133,7 +128,7 @@
       },
       {
         "clash_mode": "Global",
-        "outbound": "proxy"
+        "outbound": "Proxy"
       },
       {
         "clash_mode": "Direct",
@@ -228,7 +223,7 @@
         "update_interval": "72h0m0s"
       }
     ],
-    "final": "proxy",
+    "final": "Proxy",
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
