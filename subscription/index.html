@@ -270,6 +270,7 @@
           <a class="profile-card__links-button" href="v2rayng://install-config?url={{ user.subscription_url }}" rel="noopener noreferrer" target="_blank">اضافه کردن به v2rayNG</a>
           <a class="profile-card__links-button" href="streisand://import/{{ user.subscription_url }}" rel="noopener noreferrer" target="_blank">اضافه کردن به Streisand</a>
           <a class="profile-card__links-button" href="hiddify://import/{{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به hiddify</a>
+          <a class="profile-card__links-button" href="clash://install-config?url={{ user.subscription_url | urlencode }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به clash</a>
         </div>
       </div>
       <div class="profile-card__separator"></div>
@@ -299,6 +300,7 @@
         <input type="checkbox" name="windows" id="windows">
         <label class="profile-card__header" for="windows">برنامه مورد نیاز برای ویندوز</label>
         <div class="accordion-content">
+          <a class="profile-card__links-button" href="https://github.com/MetaCubeX/clash-verge/releases/download/v1.3.9/Clash.Verge_1.3.9_x64_en-US.msi" rel="noopener noreferrer" target="_blank">Clash</a>
           <a class="profile-card__links-button" href="https://github.com/2dust/v2rayN/releases/latest/download/zz_v2rayN-With-Core-SelfContained.7z" rel="noopener noreferrer" target="_blank">v2rayN</a>
           <a class="profile-card__links-button" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Portable-x64.zip" rel="noopener noreferrer" target="_blank">Hiddify Next</a>
         </div>
