@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/oXIIIo/marzban-template/tree/master/home" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/oXIIIo/marzban-template/master/home/preview.gif">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mjzaret/marzban-template/master/home/preview.gif">
       <img width="363" height="328" src="https://raw.githubusercontent.com/Mjzaret/marzban-template/master/home/preview.gif">
     </picture>
   </a>
