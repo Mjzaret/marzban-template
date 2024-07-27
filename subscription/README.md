@@ -2,7 +2,7 @@
   <a href="https://github.com/oXIIIo/marzban-template/tree/master/subscription" target="_blank" rel="noopener noreferrer">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/oXIIIo/marzban-template/master/subscription/preview.jpg">
-      <img width="372" height="408" src="https://raw.githubusercontent.com/oXIIIo/marzban-template/master/subscription/preview.jpg">
+      <img width="372" height="408" src="https://raw.githubusercontent.com/Mjzaret/marzban-template/master/subscription/preview.jpg">
     </picture>
   </a>
 </p>
@@ -22,7 +22,7 @@
 # مراحل نصب
 1. دانلود فایل template
 ```sh
-sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/oXIIIo/marzban-template/master/subscription/index.html
+sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/Mjzaret/marzban-template/master/subscription/index.html
 ```
 
 2. دستورات زیر رو تو ترمینال سرورتون بزنید:
