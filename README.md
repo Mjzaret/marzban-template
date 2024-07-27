@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/oXIIIo/marzban-template/" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Mjzaret/marzban-template/" target="_blank" rel="noopener noreferrer">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gozargah/Marzban-docs/master/screenshots/logo-dark.png">
       <img width="160" height="160" src="https://raw.githubusercontent.com/Gozargah/Marzban-docs/master/screenshots/logo-dark.png">
@@ -12,10 +12,10 @@
 لیستی از تمپلیت های شخصی سازی شده برای مرزبان
 
 # لیست تمپلیت ها
-- [تمپلیت برای clash و clash-meta](https://github.com/oXIIIo/marzban-template/tree/master/clash)
-- [تمپلیت برای sing-box](https://github.com/oXIIIo/marzban-template/tree/master/singbox)
-- [صفحه سابسکریپشن](https://github.com/oXIIIo/marzban-template/tree/master/subscription)
-- [صفحه خانه](https://github.com/oXIIIo/marzban-template/tree/master/home)
+- [تمپلیت برای clash و clash-meta](https://github.com/Mjzaret/marzban-template/tree/master/clash)
+- [تمپلیت برای sing-box](https://github.com/Mjzaret/marzban-template/tree/master/singbox)
+- [صفحه سابسکریپشن](https://github.com/Mjzaret/marzban-template/tree/master/subscription)
+- [صفحه خانه](https://github.com/Mjzaret/marzban-template/tree/master/home)
 
 
 # مراحل نصب
@@ -25,10 +25,10 @@
 برای نصب همه تمپلیت های موجو دستورات زیر را در ترمینال سرور خود اجرا کنید:
 1. دانلود فایل های تمپلیت
 ```sh
-sudo wget -N -P /var/lib/marzban/templates/clash/ https://raw.githubusercontent.com/oXIIIo/marzban-template/master/clash/default.yml
-sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/oXIIIo/marzban-template/master/singbox/default.json
-sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/oXIIIo/marzban-template/master/subscription/index.html
-sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.com/oXIIIo/marzban-template/master/home/index.html
+sudo wget -N -P /var/lib/marzban/templates/clash/ https://raw.githubusercontent.com/Mjzaret/marzban-template/master/clash/default.yml
+sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/Mjzaret/marzban-template/master/singbox/default.json
+sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/Mjzaret/marzban-template/master/subscription/index.html
+sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.com/Mjzaret/marzban-template/master/home/index.html
 ```
 2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
