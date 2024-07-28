@@ -7,14 +7,14 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "1.1.1.1",
+        "address": "tcp://8.8.8.8",
         "address_resolver": "dns_direct",
         "strategy": "prefer_ipv4",
         "detour": "Proxy"
       },
       {
         "tag": "dns_direct",
-        "address": "local",
+        "address": "tcp://8.8.8.8",
         "strategy": "prefer_ipv4",
         "detour": "direct"
       },
@@ -77,8 +77,8 @@
       "type": "urltest",
       "tag": "⚡️ Auto",
       "outbounds": null,
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m0s"
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m0s"
     },
     {
       "type": "direct",
