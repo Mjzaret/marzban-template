@@ -7,14 +7,14 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "tcp://8.8.8.8",
+        "address": "8.8.8.8",
         "address_resolver": "dns_direct",
         "strategy": "prefer_ipv4",
         "detour": "Proxy"
       },
       {
         "tag": "dns_direct",
-        "address": "tcp://8.8.8.8",
+        "address": "8.8.8.8",
         "strategy": "prefer_ipv4",
         "detour": "direct"
       },
