@@ -67,21 +67,21 @@ proxy-groups:
 - name: '⚡️ Fastest'
   type: 'url-test'
   tolerance: 150
-  url: 'https://www.gstatic.com/generate_204'
+  url: 'http://www.gstatic.com/generate_204'
   interval: 300
   proxies:
   {{ proxy_remarks | yaml | indent(2) }}
 
 - name: '📶 First Available'
   type: 'fallback'
-  url: 'https://www.gstatic.com/generate_204'
+  url: 'http://www.gstatic.com/generate_204'
   interval: 300
   proxies:
   {{ proxy_remarks | yaml | indent(2) }}
 
 - name: '♻️ Load Balance'
   type: 'load-balance'
-  url: 'https://www.gstatic.com/generate_204'
+  url: 'http://www.gstatic.com/generate_204'
   interval: 300
   strategy: 'consistent-hashing'
   proxies:
