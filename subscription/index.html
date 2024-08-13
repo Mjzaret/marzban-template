@@ -268,7 +268,7 @@
         <div class="accordion-content">
           <a class="profile-card__links-button" href="sing-box://import-remote-profile?url={{ user.subscription_url | urlencode }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به sing-box</a>
           <a class="profile-card__links-button" href="v2rayng://install-config?url={{ user.subscription_url }}" rel="noopener noreferrer" target="_blank">اضافه کردن به v2rayNG</a>
-          <a class="profile-card__links-button" href="streisand://import/{{ user.subscription_url }}" rel="noopener noreferrer" target="_blank">اضافه کردن به Streisand</a>
+          <a class="profile-card__links-button" href="streisand://import/{{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به Streisand</a>
           <a class="profile-card__links-button" href="hiddify://import/{{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به hiddify</a>
           <a class="profile-card__links-button" href="clash://install-config?url={{ user.subscription_url | urlencode }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به clash</a>
         </div>
