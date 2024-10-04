@@ -143,7 +143,7 @@
         "type": "remote",
         "tag": "geosite-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
+        "url": "https://github.com/Mjzaret/Iran-sing-box-rules/raw/refs/heads/main/assets/geosite-ir.srs",
         "download_detour": "direct",
         "update_interval": "72h0m0s"
       },
@@ -151,7 +151,7 @@
         "type": "remote",
         "tag": "geoip-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
+        "url": "https://github.com/Mjzaret/Iran-sing-box-rules/raw/refs/heads/main/assets/geoip-ir.srs",
         "download_detour": "direct",
         "update_interval": "72h0m0s"
       }
