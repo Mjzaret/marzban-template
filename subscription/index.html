@@ -239,7 +239,11 @@
               {% set remaining_seconds = [user.on_hold_expire_duration, 0] | max %}
             {% else %}
               {% set current_timestamp = now().timestamp() %}
-              {% set remaining_seconds = [user.expire - current_timestamp, 0] | max %}
+              {% if user.expire %}
+  {% set remaining_seconds = [user.expire - current_timestamp, 0] | max %}
+{% else %}
+  {% set remaining_seconds = 0 %}
+{% endif %}
             {% endif %}
             {% set remaining_days = remaining_seconds // (24 * 3600) %}
             {% set remaining_hours = (remaining_seconds % (24 * 3600)) // 3600 %}
@@ -290,7 +294,7 @@
         <input type="checkbox" name="ios" id="ios">
         <label class="profile-card__header" for="ios">برنامه مورد نیاز برای iOS</label>
         <div class="accordion-content">
-          <a class="profile-card__links-button" href="https://apps.apple.com/us/app/sing-box/id6451272673" rel="noopener noreferrer" target="_blank">sing-box</a>
+          <a class="profile-card__links-button" href="https://apps.apple.com/us/app/sing-box-vt/id6673731168" rel="noopener noreferrer" target="_blank">sing-box</a>
           <a class="profile-card__links-button" href="https://apps.apple.com/us/app/streisand/id6450534064" rel="noopener noreferrer" target="_blank">Streisand</a>
           <a class="profile-card__links-button" href="https://apps.apple.com/us/app/shadowrocket/id932747118" rel="noopener noreferrer" target="_blank">Shadowrocket 3$</a>
         </div>
@@ -302,7 +306,7 @@
         <div class="accordion-content">
           <a class="profile-card__links-button" href="https://github.com/MetaCubeX/clash-verge/releases/download/v1.3.9/Clash.Verge_1.3.9_x64_en-US.msi" rel="noopener noreferrer" target="_blank">Clash</a>
           <a class="profile-card__links-button" href="https://github.com/2dust/v2rayN/releases/latest/download/zz_v2rayN-With-Core-SelfContained.7z" rel="noopener noreferrer" target="_blank">v2rayN</a>
-          <a class="profile-card__links-button" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Portable-x64.zip" rel="noopener noreferrer" target="_blank">Hiddify Next</a>
+          <a class="profile-card__links-button" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.exe" rel="noopener noreferrer" target="_blank">Hiddify Next</a>
         </div>
       </div>
     </div>
