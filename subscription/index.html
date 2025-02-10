@@ -271,9 +271,9 @@
         <label class="profile-card__header" for="quick-add">افزودن سریع لینک سابسکریپشن</label>
         <div class="accordion-content">
           <a class="profile-card__links-button" href="sing-box://import-remote-profile?url={{ user.subscription_url | urlencode }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به sing-box</a>
-          <a class="profile-card__links-button" href="v2rayng://install-config?url={{ user.subscription_url }}" rel="noopener noreferrer" target="_blank">اضافه کردن به v2rayNG</a>
+		  <a class="profile-card__links-button" href="hiddify://import/{{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به hiddify</a>
+          <a class="profile-card__links-button" href="v2rayng://install-config?url={{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به v2rayNG</a>
           <a class="profile-card__links-button" href="streisand://import/{{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به Streisand</a>
-          <a class="profile-card__links-button" href="hiddify://import/{{ user.subscription_url }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به hiddify</a>
           <a class="profile-card__links-button" href="clash://install-config?url={{ user.subscription_url | urlencode }}#{{ user.username | urlencode }}" rel="noopener noreferrer" target="_blank">اضافه کردن به clash</a>
         </div>
       </div>
@@ -282,21 +282,21 @@
         <input type="checkbox" name="android" id="android">
         <label class="profile-card__header" for="android">برنامه مورد نیاز برای اندروید</label>
         <div class="accordion-content">
-          <a class="profile-card__links-button" href="#" rel="noopener noreferrer" target="_blank" id="SFA">sing-box</a>
-          <a class="profile-card__links-button" href="#" rel="noopener noreferrer" target="_blank" id="v2rayNGv8a">v2rayNG(v8a) - GitHub</a>
-          <a class="profile-card__links-button" href="#" rel="noopener noreferrer" target="_blank" id="v2rayNGv7a">v2rayNG(v7a) - GitHub</a>
-          <a class="profile-card__links-button" href="https://play.google.com/store/apps/details?id=com.v2ray.ang" rel="noopener noreferrer" target="_blank">v2rayNG - Google Play</a>
-          <a class="profile-card__links-button" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Android-universal.apk" rel="noopener noreferrer" target="_blank">Hiddify Next</a>
-        </div>
+          <a class="profile-card__links-button" href="https://play.google.com/store/apps/details?id=io.nekohasekai.sfa" rel="noopener noreferrer" target="_blank">SingBox - Google Play </a>
+          <a class="profile-card__links-button" href="#" rel="noopener noreferrer" target="_blank" id="SFA">SingBox - Github</a>
+		  <a class="profile-card__links-button" href="https://play.google.com/store/apps/details?id=com.v2ray.ang" rel="noopener noreferrer" target="_blank">V2RayNG - Google Play</a>
+          <a class="profile-card__links-button" href="https://play.google.com/store/apps/details?id=app.hiddify.com" rel="noopener noreferrer" target="_blank">Hiddify Next - Google Play</a>
+          <a class="profile-card__links-button" href="#" rel="noopener noreferrer" target="_blank" id="HDF">Hiddify Next - Github</a>
+		</div>
       </div>
       <div class="profile-card__separator"></div>
       <div class="accordion">
         <input type="checkbox" name="ios" id="ios">
         <label class="profile-card__header" for="ios">برنامه مورد نیاز برای iOS</label>
         <div class="accordion-content">
-          <a class="profile-card__links-button" href="https://apps.apple.com/us/app/sing-box-vt/id6673731168" rel="noopener noreferrer" target="_blank">sing-box</a>
+          <a class="profile-card__links-button" href="https://apps.apple.com/us/app/sing-box-vt/id6673731168" rel="noopener noreferrer" target="_blank">Sing-Box</a>
           <a class="profile-card__links-button" href="https://apps.apple.com/us/app/streisand/id6450534064" rel="noopener noreferrer" target="_blank">Streisand</a>
-          <a class="profile-card__links-button" href="https://apps.apple.com/us/app/shadowrocket/id932747118" rel="noopener noreferrer" target="_blank">Shadowrocket 3$</a>
+          <a class="profile-card__links-button" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532" rel="noopener noreferrer" target="_blank">Hiddify Next</a>
         </div>
       </div>
       <div class="profile-card__separator"></div>
@@ -339,6 +339,7 @@
 
     const singbox = 'https://api.github.com/repos/SagerNet/sing-box/releases/latest';
     const v2rayng = 'https://api.github.com/repos/2dust/v2rayNG/releases/latest';
+	const hiddify = 'https://api.github.com/repos/hiddify/hiddify-app/releases/latest';
 
     document.addEventListener('DOMContentLoaded', async () => {
       try {
@@ -346,6 +347,10 @@
         const sfa = document.getElementById('SFA');
         sfa.href = `https://github.com/SagerNet/sing-box/releases/download/v${sfaName}/SFA-${sfaName}-universal.apk`;
 
+        const hiddifyName = await getLatestReleaseName(hiddify);
+        const hdf = document.getElementById('HDF');
+        hdf.href = `https://github.com/hiddify/hiddify-app/releases/download/${hiddifyName}/Hiddify-Android-universal.apk` ;
+		
         const v2rayngName = await getLatestReleaseName(v2rayng);
         const v2rayngv8a = document.getElementById('v2rayNGv8a');
         v2rayngv8a.href = `https://github.com/2dust/v2rayNG/releases/download/${v2rayngName}/v2rayNG_${v2rayngName}_arm64-v8a.apk`;
